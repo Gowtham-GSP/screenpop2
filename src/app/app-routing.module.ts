@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ScreenpopCCComponent } from './screenpop-cc/screenpop-cc.component';
+import { ScreenpopibEbrpComponent } from './screenpopib-ebrp/screenpopib-ebrp.component';
 
-const routes: Routes = [
-  {
-    path:'', component:ScreenpopCCComponent
-  }
-];
+const routes: Routes = [{path:'',component:ScreenpopibEbrpComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

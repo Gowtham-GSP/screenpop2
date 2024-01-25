@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ScreenPopCC": {
+    "ScreenpopIB_EBRP": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/screen-pop-cc",
+            "outputPath": "dist/screenpop-ib-ebrp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -35,12 +35,12 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1.5mb",
+                  "maximumWarning": "4mb",
                   "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "1.5mb",
+                  "maximumWarning": "4mb",
                   "maximumError": "2mb"
                 }
               ],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ScreenPopCC:build:production"
+              "browserTarget": "ScreenpopIB_EBRP:build:production"
             },
             "development": {
-              "browserTarget": "ScreenPopCC:build:development"
+              "browserTarget": "ScreenpopIB_EBRP:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ScreenPopCC:build"
+            "browserTarget": "ScreenpopIB_EBRP:build"
           }
         },
         "test": {

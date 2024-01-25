@@ -3,23 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ScreenpopCCComponent } from './screenpop-cc/screenpop-cc.component';
-import { AppDataService } from './app.dataService';
-import { CommonWebApiService } from './common-web-api.service';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbDatepickerModule, NgbDropdownModule, NgbModalModule, NgbModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScreenpopibEbrpComponent } from './screenpopib-ebrp/screenpopib-ebrp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbDatepickerModule, NgbDropdownModule, NgbModalModule, NgbModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { AppDataService } from './app.dataservice';
+import { CommonWebApiService } from './common-web-api.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScreenpopCCComponent
+    ScreenpopibEbrpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -29,8 +28,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgbDropdownModule,
     NgbModalModule,
     ReactiveFormsModule,
+
   ],
-  providers: [AppDataService, CommonWebApiService],
+  providers: [AppDataService,CommonWebApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
